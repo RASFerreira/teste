@@ -1,0 +1,402 @@
+
+/* Fonts */
+
+@font-face{
+    font-family: AGBook;
+    src: url(./fonts/AGBookRounded-Medium.otf);
+}
+
+
+/* Configurações gerais */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.body__dark{
+    background: #000d25;
+}
+
+
+
+/* Header */
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background: url(./img/photo-1611416517780-eff3a13b0359.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Barra de navegação */
+
+.navbar{
+   width: 100%;
+   height: 10vh;
+   display: flex;
+   position: fixed;
+   align-items: center;
+   color: whitesmoke;
+   font-family: AGBook; 
+   
+   
+}
+
+.navbar__toogle{
+    background: #ffffff;
+    color: slategray;
+}
+
+.logo{
+    margin-right: auto;
+    margin-left: 15%;
+    font-size: 20px;
+}
+
+.navigation{
+    margin-left: auto;
+    margin-right: 20%;
+    
+}
+
+.navigation ul{
+    display: flex;
+    list-style: none;
+}
+
+.navigation li{
+    padding-left: 15%;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    
+}
+
+.navigation p{
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.navigation a:hover{
+    text-decoration: none;
+    color: slategray;
+    text-transform: uppercase;
+    
+}
+
+/* depois do scroll */
+
+.scroll-active{
+    color: black;
+    background: #ffffff;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.4);
+    transition: background 0.5s, color 0.7;
+ }
+
+ .scroll-active a{
+    color: black;
+    transition: color 0.7s;
+    
+ }
+
+ .scroll-active p{
+    color: black;
+    transition: color 0.7s;
+    
+ }
+
+ .scroll-active--dark{
+    color: whitesmoke;
+    background: #000d25;
+    box-shadow: 1px 1px 25px rgba(100, 100, 100, 0.2);
+    transition: background 0.5s, color 0.7;
+ }
+
+ .scroll-active--dark a{
+    color: whitesmoke;
+    transition: color 0.7s;
+    
+ }
+
+ .scroll-active--dark p{
+    color: whitesmoke;
+    transition: color 0.7s;
+    
+ }
+
+
+/* Mobile menu */
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #ffffff;
+    margin: 8px;
+}
+
+.mobile-menu__scroll div{
+    background: #000000;
+}
+
+..mobile-menu__scroll--dark div{
+    background: whitesmoke;
+}
+
+
+/* Secção track */
+
+#track{
+    
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    font-family: AGBook;
+}
+
+.conteudo__title{
+    padding-top: 5%;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: AGBook;
+}
+
+.conteudo__title--dark{
+    color: whitesmoke;
+}
+
+.item{
+    margin: 0 1%;
+    width: 300px;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.conteudo h3{
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    color: slategray;
+}
+
+
+
+.conteudo p{
+    padding-top: 10%;
+    text-align: center;
+}
+
+.conteudo__dark p{
+    color: whitesmoke;
+}
+
+.conteudo h3{
+    padding-top: 20%;
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    color: slategray;
+}
+
+
+
+.coteudo p{
+    padding-top: 10%;
+    text-align: center;
+}
+
+.conteudo__dark p{
+    color: whitesmoke;
+}
+
+.conteudo span{
+    font-weight: bold;
+}
+
+
+/* Secção Plans */
+
+.plans{
+
+}
+
+.plans__title{
+    padding-bottom: 3%;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: AGBook;
+}
+
+.plans__title--dark{
+    color: whitesmoke;
+}
+
+.conteudo__plans{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: AGBook;
+
+}
+
+
+
+.profits__img{
+    height: 100px;
+    width: 100px;
+    justify-self: center;
+    
+}
+
+.invest__img{
+    height: 100px;
+    width: 100px;
+    justify-self: center;
+    
+}
+
+.money__img{
+    height: 100px;
+    width: 100px;
+    justify-self: center;
+    
+}
+
+.hidden{
+    display: none;
+}
+
+.profits__img--dark{
+    height: 100px;
+    width: 100px;
+    justify-self: center;
+    display: none;
+}
+
+.invest__img--dark{
+    height: 100px;
+    width: 100px;
+    justify-self: center;
+    display: none;
+}
+
+.money__img--dark{
+    height: 100px;
+    width: 100px;
+    justify-self: center;
+    display: none;
+}
+
+.active{
+    display: inline;
+}
+
+.item__plans{
+    width: 250px;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    margin: 0 2%;
+    text-align: center;
+}
+
+.conteudo__plans p{
+    padding-top: 5%;
+    
+}
+
+.conteudo__plans--dark p{
+    color: whitesmoke;
+    
+}
+
+.conteudo__plans span{
+    font-weight: bold;
+    
+}
+
+
+
+
+@media screen and (max-width: 990px) {
+
+    .navigation{
+        position: absolute;
+        top: 10vh;
+        left: 50%;
+        margin-left: auto;
+        width: 50%;
+        height: 90vh;
+        background: #ffffff;
+        align-items: center;
+        color: slategray;
+        transition: all ease-in-out 0.5s;
+        transform: translateX(100%);
+        
+    }
+
+    .navigation__active{
+        transform: translateX(0%);
+        transition: all ease-in-out 0.5s;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .navigation__active--dark{
+        background: #000d25;
+    }
+
+    .navigation__active--dark a{
+        color: whitesmoke;
+    }
+
+    .navigation ul{
+        margin: 50% 0;
+        height: 50%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    .navigation a{
+        flex-direction: column;
+        color: slategray;
+    }
+
+    .navigation a:hover{
+
+    }
+
+    .mobile-menu{
+        cursor: pointer;
+        display: block;
+        margin: auto 5%;
+    }
+
+    
+}
